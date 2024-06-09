@@ -116,11 +116,11 @@ export const getPlanningAnimes = async () => {
   const upcomingSeason: Media[] = data.nextSeason.media;
 
   const latestAiring: Airing[] = data?.latestAiring?.airingSchedules.filter(
-    (airing: Airing) => airing.media.isAdult == false
+    (airing: Airing) => airing.media.isAdult == false,
   );
 
   const futureAiring: Airing[] = data?.futureAiring?.airingSchedules.filter(
-    (airing: Airing) => airing.media.isAdult == false
+    (airing: Airing) => airing.media.isAdult == false,
   );
 
   return {

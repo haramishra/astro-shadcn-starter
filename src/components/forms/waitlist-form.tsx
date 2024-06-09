@@ -64,9 +64,7 @@ export function WaitlistForm() {
                 <Input placeholder="jonhdoe@example.com" {...field} />
               </FormControl>
               <FormDescription className="text-[13px]">
-                <i>
-                  Save in Astro DB. Static page with react form!
-                </i>
+                <i>Save in Astro DB. Static page with react form!</i>
               </FormDescription>
               <FormMessage />
             </FormItem>

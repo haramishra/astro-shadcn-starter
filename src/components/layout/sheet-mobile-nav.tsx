@@ -21,7 +21,7 @@ export function SheetMobileNav({
   const mergedMainNavItems = mainNavItems?.filter(
     (item, index, self) =>
       index ===
-      self.findIndex((t) => t.href === item.href && t.title === item.title)
+      self.findIndex((t) => t.href === item.href && t.title === item.title),
   );
 
   // [
@@ -65,7 +65,7 @@ export function SheetMobileNav({
                       >
                         {item.title}
                       </a>
-                    )
+                    ),
                 )}
               </div>
             ) : null}
@@ -74,7 +74,7 @@ export function SheetMobileNav({
               <div className="flex flex-col space-y-2">
                 {sidebarNavItems.map((item, index) => {
                   const activeItems = item?.items?.filter(
-                    (subItem) => !subItem.disabled
+                    (subItem) => !subItem.disabled,
                   );
 
                   if (!activeItems || activeItems.length === 0) return null;
