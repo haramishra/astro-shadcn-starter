@@ -3,6 +3,7 @@ import BentoGrid from "@/components/sections/bentogrid.astro";
 import Features from "@/components/sections/features.astro";
 import HeroLanding from "@/components/sections/hero-landing.astro";
 import InfoLanding from "@/components/sections/info-landing.astro";
+import { LampDemo } from "@/components/sections/lamp-section";
 import PreviewLanding from "@/components/sections/preview-landing.astro";
 import Testimonials from "@/components/sections/testimonials.astro";
 
@@ -11,6 +12,7 @@ import MainLayout from "@/layouts/main-layout.astro";
 ---
 
 <MainLayout title="Landing">
+  <LampDemo client:load />
   <HeroLanding />
   <PreviewLanding />
   <BentoGrid />
