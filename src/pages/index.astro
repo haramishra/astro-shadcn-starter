@@ -9,6 +9,7 @@ import Testimonials from "@/components/sections/testimonials.astro";
 
 import { infos } from "@/config/landing";
 import MainLayout from "@/layouts/main-layout.astro";
+
 ---
 
 <MainLayout title="Landing">
@@ -18,6 +19,7 @@ import MainLayout from "@/layouts/main-layout.astro";
   <!-- <PreviewLanding /> -->
   <BentoGrid />
   <InfoLanding data={infos[0]} reverse={true} />
+  
   <!-- <InfoLanding data={infos[1]} /> -->
   <Features />
   <Testimonials />

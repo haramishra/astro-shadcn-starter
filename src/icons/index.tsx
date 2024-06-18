@@ -2,7 +2,9 @@ import {
   Calendar,
   Clock,
   Flame,
+  Globe,
   Tv2,
+  User,
   type LucideIcon,
   type LucideProps,
 } from "lucide-react";
@@ -14,12 +16,16 @@ export const Icons = {
   calendar: Calendar,
   tv: Tv2,
   clock: Clock,
+  globe: Globe,
+  user: User,
   logo: ({ ...props }: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
+      fill="none"
+      className="lucide"
       {...props}
     >
       <path
